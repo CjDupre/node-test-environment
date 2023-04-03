@@ -24,4 +24,6 @@ const sites = [
 
 console.log(sites.filter(site => {
     return site.type === 'website'
-}))
+}).length
+
+);
