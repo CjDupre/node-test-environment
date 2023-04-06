@@ -24,7 +24,7 @@ const sites = [
 
 //forEach to add property to the sites array site objects, but logs undefined because forEach does not have a return.. so second log to check that it worked
 console.log(sites.forEach(site => {
-    site.active = "true";
+    site.active = true;
 }));
 
 console.log(sites);
@@ -37,5 +37,7 @@ console.log(sites.filter(site => {
 console.log(sites.filter(site => {
     return site.thumbnail != null
 }));
+//target site within sites array, that has title property with infinessesound.com value, and change active property to false
+
 
 
