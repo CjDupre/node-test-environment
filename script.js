@@ -97,6 +97,11 @@ console.log(sitesCopy);
 sites.splice(2, 3, { 'thumbnail': 'asd', 'test': 'succeed' }, { 'thumbnail': 'asd', 'test': 'succeed' });
 console.log(sites);
 
+//slice just returns the chosen area of arr, it does not mutate original array even without spread operator
+
+console.log(sites.slice(1, 3));
+
+
 
 //filter out duplicate objects
 //filter object inside of array that has api in the front of/ in the url
