@@ -101,6 +101,23 @@ console.log(sites);
 
 console.log(sites.slice(1, 3));
 
+//index of does not work on my array because the objects are nameless i guess?
+console.log(sites.indexOf());
+console.log(sites.lastIndexOf());
+
+//flat arr, arg = # of levels deep, pulls stuff out of nested arrays and brings it to the top lvel of the array
+let flat = sites.flat(2);
+console.log(flat);
+
+//HIGHER ORDER!fucntion that accepts fucnitons as arguments and or returns a function
+//functions that operate on other functions
+//loops thru sites arr and logs the name/object as it pass each element with a callback function
+sites.forEach(n => {
+    console.log(n);
+});
+
+
+
 
 
 //filter out duplicate objects
