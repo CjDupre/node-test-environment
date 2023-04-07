@@ -180,7 +180,22 @@ let comments = [
     }
 ];
 
-output = [
+
+
+
+let output = comments.map(comment => ({
+    ...comment,
+    samples: samples.filter(f => f.sample == comment.sampleId)
+}));
+console.log(samples);
+console.log(comments);
+console.log('output below');
+console.log(output);
+
+//filter to select sample that matches sampleId
+//make array from matching Ids then merge them?
+
+desiredOutput = [
     {
         sample: '1',
         url: 'jpg.com',
