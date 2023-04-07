@@ -112,9 +112,21 @@ console.log(flat);
 //HIGHER ORDER!fucntion that accepts fucnitons as arguments and or returns a function
 //functions that operate on other functions
 //loops thru sites arr and logs the name/object as it pass each element with a callback function
+let count = 0;
 sites.forEach(n => {
     console.log(n);
+    count++;
+    console.log(count);
 });
+//detailed control with the for loop, foreach is simple
+for (let i = 0; i < sites.length; i = i + 2) {
+    console.log(sites[i]);
+};
+
+let nums = [1, 2, 3, 4, 5, 6];
+let doubled = nums.map((n) => n * 2);
+console.log(doubled);
+console.log(nums.map((n) => n * 2));
 
 
 
@@ -123,22 +135,4 @@ sites.forEach(n => {
 //filter out duplicate objects
 //filter object inside of array that has api in the front of/ in the url
 //target site within sites array, that has title property with infinessesound.com value, and change active property to false
-
-//useful must know array methods
-// toString();
-// join();
-// concat();
-// splice();
-// indexOf();
-// lastIndexOf();
-// forEach();
-// map();
-// filter();
-// reduce();
-// some();
-// every();
-// flat();
-// find();
-// findIndex();
-// sort();
 
