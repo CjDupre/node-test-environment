@@ -46,6 +46,30 @@ const sites2 = [
     }
 ];
 
+const sites3 = [
+    {
+        thumbnail: "1234.com",
+        title: "screencache docs",
+        url: "screencache.com/docs",
+        description: "",
+        type: "api"
+    },
+    {
+        thumbnail: "3456.com",
+        title: "infinesse",
+        url: "infinesse.com",
+        description: "",
+        type: "website"
+    },
+    {
+        thumbnail: null,
+        title: "samples",
+        url: "api.infinessesound.com",
+        description: "",
+        type: "website"
+    }
+];
+
 //forEach to add property to the sites array site objects, but logs undefined because forEach does not have a return.. so second log to check that it worked
 console.log(sites.forEach(site => {
     site.active = true;
@@ -61,14 +85,19 @@ console.log(sites.filter(site => {
 console.log(sites.filter(site => {
     return site.thumbnail != null
 }));
+//concat two arrays, merges the contents of two arrays into the same first array
+console.log(sites.concat(sites2, sites3));
+
+//splice, used to remove elements and add elements
+let sitesCopy = [...sites]
+console.log(sitesCopy.splice(1, 1));
+
+
+
+
+//filter out duplicate objects
+//filter object inside of array that has api in the front of/ in the url
 //target site within sites array, that has title property with infinessesound.com value, and change active property to false
-
-console.log(sites.toString(sites.site));
-
-
-
-
-
 
 //useful must know array methods
 // toString();
