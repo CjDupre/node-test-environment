@@ -149,15 +149,15 @@ console.log(sites.filter(site => {
 //that sample (edited) 
 let samples = [
     {
-        sample: '1',
+        sample: 1,
         url: 'jpg.com'
     },
     {
-        sample: '2',
+        sample: 2,
         url: 'rbg.com'
     },
     {
-        sample: '3',
+        sample: 3,
         url: 'jurassic.park'
     }
 ];
