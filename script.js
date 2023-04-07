@@ -147,6 +147,23 @@ console.log(sites.filter(site => {
 //join them together into a third array (output) that has "comments" 
 //added to each work sample entity containing an array of comments for 
 //that sample (edited) 
+
+
+
+
+
+
+
+// let output = samples.map(samples => ({
+//     ...samples,
+//     comments: comments.filter(comment => comment.sampleId === samples.sample)
+// }));
+
+
+console.log('output below');
+
+
+
 let samples = [
     {
         sample: 1,
@@ -179,21 +196,11 @@ let comments = [
         sampleId: 3
     }
 ];
-
-
-
-
-
-console.log(samples);
-console.log(comments);
 let output = samples.map(samples => ({
     ...samples,
     comments: comments.filter(comment => comment.sampleId === samples.sample)
 }));
-console.log(samples);
-console.log(comments);
-console.log('output below');
-console.log(output);
+console.log(JSON.stringify(output, undefined, 2));
 
 
 
