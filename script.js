@@ -88,11 +88,14 @@ console.log(sites.filter(site => {
 //concat two arrays, merges the contents of two arrays into the same first array
 console.log(sites.concat(sites2, sites3));
 
-//splice, used to remove elements and add elements
+//splice, used to remove elements and add elements. create new array with spread operator and operate onthat
 let sitesCopy = [...sites]
 console.log(sitesCopy.splice(1, 1));
+console.log(sitesCopy);
 
-
+//delete from and replace.. need to put object props into the elements somehow
+sites.splice(2, 3, { 'thumbnail': 'asd', 'test': 'succeed' }, { 'thumbnail': 'asd', 'test': 'succeed' });
+console.log(sites);
 
 
 //filter out duplicate objects
