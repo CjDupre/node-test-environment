@@ -140,3 +140,80 @@ console.log(sites.filter(site => {
 //filter object inside of array that has api in the front of/ in the url
 //target site within sites array, that has title property with infinessesound.com value, and change active property to false
 
+
+
+//Given an array of work samples and a separate array of comments, 
+//where each comment has sampleId that refers to the sample it's for, 
+//join them together into a third array (output) that has "comments" 
+//added to each work sample entity containing an array of comments for 
+//that sample (edited) 
+let samples = [
+    {
+        sample: '1',
+        url: 'jpg.com'
+    },
+    {
+        sample: '2',
+        url: 'rbg.com'
+    },
+    {
+        sample: '3',
+        url: 'jurassic.park'
+    }
+];
+let comments = [
+    {
+        comment: 'the machine ran hot',
+        sampleId: 1
+    },
+    {
+        comment: 'the',
+        sampleId: 3
+    },
+    {
+        comment: 'chonk',
+        sampleId: 3
+    },
+    {
+        comment: 'chonkens',
+        sampleId: 3
+    }
+];
+
+output = [
+    {
+        sample: '1',
+        url: 'jpg.com',
+        comments: [
+            {
+                comment: 'the machine ran hot',
+                sampleId: 1
+            }
+        ]
+    },
+    {
+        sample: '2',
+        url: 'rbg.com',
+        comments: [
+            {}
+        ]
+    },
+    {
+        sample: '3',
+        url: 'jurassic.park',
+        comments: [
+            {
+                comment: 'the',
+                sampleId: 3
+            },
+            {
+                comment: 'chonk',
+                sampleId: 3
+            },
+            {
+                comment: 'chonkens',
+                sampleId: 3
+            }
+        ]
+    }
+]
