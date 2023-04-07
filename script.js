@@ -183,18 +183,22 @@ let comments = [
 
 
 
-let output = samples.map(sample => ({
-    ...sample,
-    comments: comments.filter(f => f.comment == samples.sample)
-}), samples);
+
+console.log(samples);
+console.log(comments);
+let output = samples.map(samples => ({
+    ...samples,
+    comments: comments.filter(comment => comment.sampleId === samples.sample)
+}));
 console.log(samples);
 console.log(comments);
 console.log('output below');
 console.log(output);
 
 
-//filter to select sample that matches sampleId
-//make array from matching Ids then merge them?
+
+
+
 
 desiredOutput = [
     {
