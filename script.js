@@ -128,6 +128,10 @@ let doubled = nums.map((n) => n * 2);
 console.log(doubled);
 console.log(nums.map((n) => n * 2));
 
+console.log(sites.filter(site => {
+    return site.active != false
+}));
+
 
 
 
